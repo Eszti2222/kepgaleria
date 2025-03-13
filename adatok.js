@@ -1,4 +1,4 @@
-export const KEPEK = [
+export const KEPEKLISTA = [
     {
         kep: "kepek/DSC7681.jpeg",
         cim: "Kakasmandiko",

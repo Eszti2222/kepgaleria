@@ -1,26 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  max-width: 800px;
+  margin: auto;
+}
+
 .galeria {
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
 }
-.galeria .kep {
-   
+.galeria img,
+.nagykep img{
+  width: 100%;
 }
-.galeria img {
-  
-}
-
-.nagykep div {
-  
-    
-}
-
-
-
 .nagykep {
-   
-    border: 1px solid gray; 
-    border-radius: 10px;
-}
-.nagykep img {
-    
+  display: grid;
+  grid-template-columns: 60px auto 60px;
+  border: 1px solid gray;
+  border-radius: 10px;
 }
 
+@media screen and(max-width: 500px) {
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,29 +1,11 @@
-import { KEPEK } from "./adatok.js";
-import { htmlOsszeAllit } from "./fuggvenyek.js";
+import { KEPEKLISTA } from "./adatok.js";
+import Kep from "./Kep.js";
+import Galeria from "./Galeria.js";
+import KiemeltKep from "./KiemeltKep.js";
+import NagyKep from "./NagyKep.js";
+/*pédányosítjuk a kép osztályt */
+let galeriaElem = document.getElementsByClassName("galeria")[0];
+let nagyKepElem = document.getElementsByClassName("nagykep")[0];
 
-/*1. feladat:  galéria kisképeinek elhelyezése */
-/* fogd meg a .galeria elemet */
-
-/* írd bele az összeálíltott html képsorozatot */
-
-
-/*2. feladat  A .nagykep divben lévő img elem megfogása */
-
-/* A .nagykep div megfogása */
-
-
-
-/*3. feladat-  eseménykezelő hozzáadása a kisképekhez  */
-/* Az előzőekben létrehozott kisképek megfogása (querySelectorAll) - ez egy lista lesz */
-
-/* eseménykezelő hozzáadása a kisképekhez, ciklussal */
-
-
-
-
-/* Az eseménykezelő függvényében: ha a kisképre kattintunk, akkor a nagykép src attribútumát le kell cserélni a kiskép src attribútumában megadott elérési útvonalra  */
-
-
-
-
-/* 4. feladat .bal és a .jobb gombokra kattintva léptessük a galériát */
+new Galeria(KEPEKLISTA, galeriaElem);
+new NagyKep(KEPEKLISTA,nagyKepElem);
